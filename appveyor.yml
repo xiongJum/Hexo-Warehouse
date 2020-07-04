@@ -8,7 +8,7 @@ install:
   - npm --version
   - npm install hexo-cli -g
   - npm install
-  - git submodule update --init --recursive'
+  - git submodule update --init --recursive
 
 build_script:
   - hexo generate
