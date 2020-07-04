@@ -1,34 +1,45 @@
 version: 1.0.{build}
+image: Previous Visual Studio 2017
+environment:
+  STATIC_SITE_REPO: https://github.com/xiongJum/xiongjum.github.io
+  TARGET_BRANCH: master
+  GIT_USER_EMAIL: xiongjum96@outlook.com
+  GIT_USER_NAME: xiongJum
 build_script:
 - sh: >-
-    clone_depth: 5
-
-
-    environment:
-      access_token:
-        secure: 6aDgOGMP44kU9HqXzBaEX+uI0JOH4G34rAVRBcmn6wfL8Jg0LzOT+fGejKiCybPp
-
-    install:
-      - node --version
-      - npm --version
-      - npm install
-      - npm install hexo-cli -g
+    version: 1.0.{build}
 
     build_script:
-      - hexo generate
 
-    artifacts:
-      - path: public
+    - sh: >-
+        clone_depth: 5
 
-    on_success:
-      - git config --global credential.helper store
-      - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
-      - git config --global user.email "%GIT_USER_EMAIL%"
-      - git config --global user.name "%GIT_USER_NAME%"
-      - git clone --depth 5 -q --branch=%TARGET_BRANCH% %STATIC_SITE_REPO% %TEMP%\static-site
-      - cd %TEMP%\static-site
-      - del * /f /q
-      - for /d %%p IN (*) do rmdir "%%p" /s /q
-      - SETLOCAL EnableDelayedExpansion & robocopy "%APPVEYOR_BUILD_FOLDER%\public" "%TEMP%\static-site" /e & IF !ERRORLEVEL! EQU 1 (exit 0) ELSE (IF !ERRORLEVEL! EQU 3 (exit 0) ELSE (exit 1))
-      - git add -A
-      - if "%APPVEYOR_REPO_BRANCH%"=="master" if not defined APPVEYOR_PULL_REQUEST_NUMBER (git diff --quiet --exit-code --cached || git commit -m "Update Static Site" && git push origin %TARGET_BRANCH% && appveyor AddMessage "Static Site Updated")
+
+        environment:
+          access_token:
+            secure: 6aDgOGMP44kU9HqXzBaEX+uI0JOH4G34rAVRBcmn6wfL8Jg0LzOT+fGejKiCybPp
+
+        install:
+          - node --version
+          - npm --version
+          - npm install
+          - npm install hexo-cli -g
+
+        build_script:
+          - hexo generate
+
+        artifacts:
+          - path: public
+
+        on_success:
+          - git config --global credential.helper store
+          - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
+          - git config --global user.email "%GIT_USER_EMAIL%"
+          - git config --global user.name "%GIT_USER_NAME%"
+          - git clone --depth 5 -q --branch=%TARGET_BRANCH% %STATIC_SITE_REPO% %TEMP%\static-site
+          - cd %TEMP%\static-site
+          - del * /f /q
+          - for /d %%p IN (*) do rmdir "%%p" /s /q
+          - SETLOCAL EnableDelayedExpansion & robocopy "%APPVEYOR_BUILD_FOLDER%\public" "%TEMP%\static-site" /e & IF !ERRORLEVEL! EQU 1 (exit 0) ELSE (IF !ERRORLEVEL! EQU 3 (exit 0) ELSE (exit 1))
+          - git add -A
+          - if "%APPVEYOR_REPO_BRANCH%"=="master" if not defined APPVEYOR_PULL_REQUEST_NUMBER (git diff --quiet --exit-code --cached || git commit -m "Update Static Site" && git push origin %TARGET_BRANCH% && appveyor AddMessage "Static Site Updated")
