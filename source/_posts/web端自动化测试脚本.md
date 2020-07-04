@@ -1,3 +1,13 @@
+---
+cover: https://cdn.jsdelivr.net/gh/xiongJum/Picture/img/77247188_p0.jpg
+title: web端自动测试学习01
+tag: 
+- python
+- selenium
+---
+
+
+
 web端自动化测试脚本
 
 ---

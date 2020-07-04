@@ -1,3 +1,12 @@
+---
+title: linux01
+tag: 
+- linux 
+- shell
+---
+
+
+
 linux
 
 ##### (1). bash

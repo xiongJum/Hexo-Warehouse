@@ -1,3 +1,14 @@
+---
+title: Locuat性能测试
+cover: https://cdn.jsdelivr.net/gh/xiongJum/Picture/img/78405585_p0.png
+tag: 
+- python
+- locaust
+- post
+- http
+- 接口
+---
+
 
 
 # Locust性能测试

@@ -2,6 +2,7 @@
 title: Python解释器
 date: 2020-04-23 08:00:05
 tags: Python
+cover: https://cdn.jsdelivr.net/gh/xiongJum/Picture/img/82169888_p0.png
 ---
 ### **修饰器的作用**
 
