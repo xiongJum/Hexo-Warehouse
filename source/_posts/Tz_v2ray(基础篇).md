@@ -37,12 +37,13 @@ tag:
     +   可视化操作，查看方便、学习门槛较低
     +   由于是网页端所以管理会比较方便
     +   该面板可以配置多用户
-
 +   安装&升级v2ray
 
-    +   ~~~shell
-        bash <(curl -Ls https://blog.sprov.xyz/v2-ui.sh)
-        ~~~
+~~~
+bash <(curl -Ls https://blog.sprov.xyz/v2-ui.sh)
+~~~
+
+
 
 +   输入v2-ui，进入面板设置
 
@@ -60,7 +61,9 @@ tag:
 +   ![](https://cdn.jsdelivr.net/gh/xiongJum/Picture/Scr/03.png)
 
 +   输入当前服务器IP:端口 和账号密码admin，进入设置面板
+
 +   ![](https://cdn.jsdelivr.net/gh/xiongJum/Picture/Scr/04.png)
+
 +   1.  点击账号列表，点击左上角的+号，进入添加账号页面，备注为非填项，其余默认即可，可以按照自己的需求进行修改，本次教程选择的协议为kcp
     2.  kcp消耗流量比较多，但延迟较低，对于延迟较高的IP，选择kcp会一定程度上改善网络环境
     3.  如果想选择其余协议，可以参考[Blog](https://toutyrater.github.io/advanced/wss_and_web.html)
