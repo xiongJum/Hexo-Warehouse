@@ -1,0 +1,43 @@
+- class_name: 创作
+  class_desc: 创作中...
+  link_list:
+    - name: Jutype Notebook
+      link:
+      avatar: https://cdn.jsdelivr.net/gh/xiongJum/Picture//icon/code.png
+      descr: 跨多种编程语言的交互式计算的开源软件
+
+
+- class_name: 学习
+  class_desc: 学习中...
+  link_list:
+    - name: Github
+      link: https://github.com/xiongJum 
+      avatar: https://cdn.jsdelivr.net/gh/xiongJum/Picture//icon/github2.png
+      descr: 全球最大同性交友网站
+    - name: Hexo
+      link: https://hexo.io/zh-cn/
+      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      descr: 快速、简洁且高效的博客框架
+    - name: Butterfly Docs
+      link: https://demo.jerryc.me/
+      avatar: https://cdn.jsdelivr.net/gh/xiongJum/Picture//icon/butterfly-docs.png
+      descr: Hexo 主题配置文档
+
+- class_name: 视频网站
+  class_desc: 值得推荐的视频网站
+  link_list:
+    - name: Youtube
+      link: https://www.youtube.com/
+      avatar: https://cdn.jsdelivr.net/gh/xiongJum/Picture/icon/youtube.png
+      descr: YouTube视频网站
+    - name: BiliBili
+      link: https://www.bilibili.com/
+      avatar: https://cdn.jsdelivr.net/gh/xiongJum/Picture//icon/retro-tv.png
+      descr: 哔哩哔哩 (゜-゜)つロ 干杯~-bilibili
+    - name: Twitter
+      link: https://twitter.com/
+      avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
+      descr: 社交分享平台
+      
+
+      

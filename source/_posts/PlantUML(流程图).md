@@ -1,9 +1,11 @@
 ---
 title: PlantUML流程图
+date: 2020-06-30 09:00:00
+cover: https://cdn.jsdelivr.net/gh/xiongJum/Picture/img/78101956_p0.jpg
 tag: 
 - vscode
 - 工具
-cover: https://cdn.jsdelivr.net/gh/xiongJum/Picture/img/78101956_p0.jpg
+- 流程图
 ---
 
 
