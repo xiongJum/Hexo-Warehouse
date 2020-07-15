@@ -1,6 +1,7 @@
 ---
 title: linux01
 date: 2020-06-28 09:00:00
+categories: Linux
 tag: 
 - linux 
 - shell

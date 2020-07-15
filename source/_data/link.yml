@@ -2,7 +2,7 @@
   class_desc: 创作中...
   link_list:
     - name: Jutype Notebook
-      link:
+      link: http://xiongjum.top:10888
       avatar: https://cdn.jsdelivr.net/gh/xiongJum/Picture//icon/code.png
       descr: 跨多种编程语言的交互式计算的开源软件
 
@@ -16,12 +16,46 @@
       descr: 全球最大同性交友网站
     - name: Hexo
       link: https://hexo.io/zh-cn/
-      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      avatar: https://cdn.jsdelivr.net/gh/xiongJum/Picture/icon/Hexo.svg
       descr: 快速、简洁且高效的博客框架
     - name: Butterfly Docs
       link: https://demo.jerryc.me/
       avatar: https://cdn.jsdelivr.net/gh/xiongJum/Picture//icon/butterfly-docs.png
       descr: Hexo 主题配置文档
+    - name: Linux教程
+      link: http://cn.linux.vbird.org/
+      descr: 鸟哥的Linux私房菜
+      avatar: https://cdn.jsdelivr.net/gh/xiongJum/Picture/icon/linux.png
+- class_name: 语言
+  class_desc: 语言教程和文档
+  link_list:
+    - name: Python Api 文档
+      link: https://docs.python.org/zh-cn/3/
+      avatar: https://cdn.jsdelivr.net/gh/xiongJum/Picture/icon/pythonDoc.svg
+      descr: 欢迎！这里是 Python 的中文文档
+    - name: Python入门教程
+      link: https://www.readwithu.com/
+      avatar: https://cdn.jsdelivr.net/gh/xiongJum/Picture/icon/twowater.jpg
+      descr: TwoWater@GitHub 的python入门教程
+    - name: MDN web docs
+      link: https://developer.mozilla.org/zh-CN/docs/Web
+      avatar: https://developer.mozilla.org/static/img/web-docs-sprite.22a6a085cf14.svg
+      descr: Web 技术参考(Html、css...)
+    - name: w3schools
+      link: https://www.w3schools.com/
+      descr: THE WORLD'S LARGEST WEB DEVELOPER SITE
+
+- class_name: 设计
+  class_desc: 提升俺的审美
+  link_list:
+    - name: IconFont
+      link: https://www.iconfont.cn/
+      avatar: https://cdn.jsdelivr.net/gh/xiongJum/Picture/icon/iconfont.svg
+      descr: 阿里巴巴矢量图库
+    - name: Icon8
+      link: https://icons8.cn/
+      avatar: https://cdn.jsdelivr.net/gh/xiongJum/Picture/icon/icons8.svg
+      descr: 免费图标、照片、插图、音乐与工具
 
 - class_name: 视频网站
   class_desc: 值得推荐的视频网站
@@ -38,6 +72,3 @@
       link: https://twitter.com/
       avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
       descr: 社交分享平台
-      
-
-      

@@ -4,7 +4,7 @@
 
 # Site
 title: Jum‘ Xiong
-subtitle: 记录生活
+subtitle:
 description: ''
 keywords:
 author: 酒明
@@ -107,3 +107,21 @@ server:
   port: 8895
   compress: true
   header: true
+
+# 豆瓣爬取
+douban:
+  user: 219334217
+  builtin: true
+  # book:
+    # title: 'This is my book title'
+    # quote: 'This is my book quote'
+  movie:
+    title: 'My movie list'
+    quote: '利兹与青鸟'
+  # game:
+    # title: 'This is my game title'
+    # quote: 'This is my game quote'
+  timeout: 10000 
+
+# 跳过渲染文件或目录
+# skip_render: photo/img
