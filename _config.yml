@@ -122,6 +122,3 @@ douban:
     # title: 'This is my game title'
     # quote: 'This is my game quote'
   timeout: 10000 
-
-# 跳过渲染文件或目录
-# skip_render: photo/img

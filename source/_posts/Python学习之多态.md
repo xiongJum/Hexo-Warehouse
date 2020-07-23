@@ -1,5 +1,5 @@
 ---
-title: python学习之类的多态(浅析)
+title: 【浅析】python的多态
 cover: https://cdn.jsdelivr.net/gh/xiongJum/Picture//img/77253241_p0.png
 date: 2020-07-10 16:00:00
 categories: 
@@ -7,7 +7,6 @@ categories:
 tag:
 - python
 - 多态
-- 代码
 ---
 
 ##### Ⅰ，理解

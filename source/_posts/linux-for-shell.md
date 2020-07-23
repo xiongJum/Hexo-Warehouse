@@ -1,7 +1,7 @@
 ---
-title: linux01
+title: 了解SHELL(其一)
 date: 2020-06-28 09:00:00
-categories: Linux
+categories: linux
 tag: 
 - linux 
 - shell

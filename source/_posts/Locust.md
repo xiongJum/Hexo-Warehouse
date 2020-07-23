@@ -1,13 +1,11 @@
 ---
-title: Locuat性能测试
+title: 性能测试之Locust
 date: 2020-05-28 09:00:00
 cover: https://cdn.jsdelivr.net/gh/xiongJum/Picture/img/78405585_p0.png
 tag: 
 - python
-- locaust
-- post
 - http
-- 接口
+- 接口性能测试
 ---
 
 

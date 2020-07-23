@@ -1,9 +1,8 @@
 ---
-title: V2ray搭建教程（基础篇）
+title: 【基础篇】V2ray搭建教程
 date: 2020-07-05 09:00:00
 cover: https://cdn.jsdelivr.net/gh/xiongJum/Picture//img/82601928_p0.jpg
 tag: 
-- 服务器
 - vpn
 - V2ray
 ---

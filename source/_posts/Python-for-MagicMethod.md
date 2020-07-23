@@ -1,10 +1,10 @@
 ---
-title: Python学习之Magic Method(浅析)
+title: 【浅析】Magic Method
 date: 2020-07-15 11:00:00
+cover: https://cdn.jsdelivr.net/gh/xiongJum/Picture/img/83088427.jpg
 categories: 
 - Python浅析
 tag: 
-- 入门
 - python
 - Magic Method
 - 描述器
