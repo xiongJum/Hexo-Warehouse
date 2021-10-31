@@ -1,0 +1,64 @@
+# Menu
+menu:
+  首頁: /
+  分類: /categories
+  收藏: /favorites
+  關於: /about
+  時間綫: /archives
+
+# 设置rss 当前暂未安装
+##  rss: /atom.xml
+
+# Miscellaneous
+favicon: /favicon.ico
+brand: /favicon.ico
+
+# Ocean Video
+# Because I put videos in multiple formats on the same path, I just labeled the path here.
+ocean:
+  overlay: true
+  path: /images/ocean/
+  brand: /images/hexo-inverted.svg
+
+# Content
+excerpt_link: Read More...
+
+# MIIT ICP/IP/DOMAIN
+beian:
+  enable: true
+  number: ZHWANGART
+  url: https://beian.miit.gov.cn/
+
+
+# Tags
+show_count: false
+
+# Toc
+toc: true
+
+# fancybox
+fancybox: true
+
+# 是否显示复制按钮
+show_copy_btn: true
+
+# Gitalk
+gitalk:
+  enable: false # true
+  clientID: # GitHub Application Client ID
+  clientSecret: # Client Secret
+  repo: # Repository name
+  owner: # GitHub ID
+  admin: # GitHub ID
+
+# Valine
+valine:
+  enable: false # true
+  el: 'vcomments'
+  appId:
+  appKey:
+  notify: false
+  verify: true
+  avatar: 'mp'
+  pageSize: '10'
+  placeholder: '请输入...'
