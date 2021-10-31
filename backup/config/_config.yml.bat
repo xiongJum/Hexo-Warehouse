@@ -3,18 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Jum`Xiong
-subtitle: '好奇|记录|进步'
-description: '围城'
-keywords: 编程
-author: 熊小酒
+title: Jum‘ Xiong
+subtitle:
+description: ''
+keywords:
+author: 酒明
 language: zh-CN
-timezone: 'Asia/Shanghai'
+timezone: ''
 
 # URL
-## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://18.178.175.124
+root: /
+permalink: :title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -33,6 +34,7 @@ skip_render:
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
+auto_spacing : true
 titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
@@ -50,11 +52,6 @@ highlight:
   tab_replace: ''
   wrap: true
   hljs: false
-prismjs:
-  enable: false
-  preprocess: true
-  line_number: true
-  tab_replace: ''
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -78,10 +75,10 @@ meta_generator: true
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
+date_format: YYYY/MM/DD
 time_format: HH:mm:ss
-## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+## Use post's date for updated date unless set in front-matter
+updated_option: false
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -100,18 +97,28 @@ ignore:
 theme: ocean
 
 # Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
+## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/xiongJum/xiongjum.github.io
 
-# 服务器配置
+#服务端口
 server:
-        port: 8895
-        compress: true
-        header: true
+  port: 8895
+  compress: true
+  header: true
 
-# 本地搜索配置
-search:
-        path: search.xml
-        field: post
-        content: true
+# 豆瓣爬取
+douban:
+  user: 219334217
+  builtin: true
+  # book:
+    # title: 'This is my book title'
+    # quote: 'This is my book quote'
+  movie:
+    title: 'My movie list'
+    quote: '利兹与青鸟'
+  # game:
+    # title: 'This is my game title'
+    # quote: 'This is my game quote'
+  timeout: 10000 
