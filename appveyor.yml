@@ -30,4 +30,4 @@ on_success:
   - echo blog.xcumin.top > CNAME
   - git add -A
   - if "%APPVEYOR_REPO_BRANCH%"=="master" if not defined APPVEYOR_PULL_REQUEST_NUMBER (git diff --quiet --exit-code --cached || git commit -m "Update Static Site" && git push origin %TARGET_BRANCH% && appveyor AddMessage "Static Site Updated")
-  - ehco blog.xcumin.top > CNAME
+  - echo blog.xcumin.top > CNAME
