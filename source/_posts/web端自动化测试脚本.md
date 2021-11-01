@@ -7,6 +7,16 @@ tag:
 - selenium
 ---
 
+
+Selenium 是支持 web 浏览器自动化的一系列工具和库的综合性项目，它提供了扩展来模拟用户与浏览器的交互，用于扩展浏览器分配的分发服务器， 以及用于实现 [W3C WebDriver](https://www.w3.org/TR/webdriver/) 规范的基础结构， 该规范允许您为所有主要 Web 浏览器编写可互换的代码.
+
+Selenium 汇集了浏览器供应商，工程师和爱好者，以进一步围绕 Web 平台自动化进行公开讨论。 该项目组织了一次年度会议，以教学和培养社区.
+
+Selenium 的核心是 [WebDriver](https://www.selenium.dev/zh-cn/documentation/webdriver/)，这是一个编写指令集的接口，可以在许多浏览器中互换运行
+
+<!--more-->
+
+
 ##### Ⅰ、准备工具
 
 +   下载selenium库
