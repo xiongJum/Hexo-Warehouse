@@ -1,10 +1,14 @@
 ---
-title: 【浅析】web端自动测试学习
-cover: https://cdn.jsdelivr.net/gh/xiongJum/Picture/img/77247188_p0.jpg
+title: web 端自動化測試
+# photos: https://cdn.jsdelivr.net/gh/xiongJum/Picture/img/77247188_p0.jpg
 date: 2020-06-29 09:00:00
+categories:
+  - 測試
+  - 自動化測試
 tag: 
 - python
 - selenium
+- web 自動化測試
 ---
 
 
@@ -17,26 +21,26 @@ Selenium 的核心是 [WebDriver](https://www.selenium.dev/zh-cn/documentation/w
 <!--more-->
 
 
-##### Ⅰ、准备工具
+# 1. 准备
 
-+   下载selenium库
+1, 下载selenium库
 
-~~~shell
+```shell
 pip3 install selenium
-# 若下载时间过慢，可以跟换国内pip源进行下载
-~~~
+```
+ps 若下载时间过慢，可以跟换国内pip源进行下载
 
-+   下载浏览器驱动，下面用例以火狐浏览器举例
+2, 下载浏览器驱动，下面用例以火狐浏览器举例
 
 将[chrome](http://chromedriver.chromium.org/downloads)驱动放在目录 [python的安装目录]\Python\Python(版本号)下，或者放在执行和执行文件同路径下
 
+# 2. 編寫脚本文件
 
+## 2.1 编写基礎的web自动化脚本
 
-##### Ⅱ、编写简单的web自动化脚本
+1, 編寫执行脚本文件
 
-+   执行脚本文件
-
-~~~python
+```python
 from selenium import webdriver
 import unittest
 
@@ -60,21 +64,21 @@ class seleniumTest(unittest.TestCase):
 if __name__ == "__main__":
     # 运行全部以test_开头的方法，vrrbosity为打印等级，默认为2，exit为退出条件，默认为True
     unittest.main(verbosity=2, exit = False)
-~~~
+```
 
-+   执行结果
+2, 执行脚本文件
 
-~~~ shell
+```shell
 test_login (__main__.seleniumTest) ... ok
 -----------------------------------------------------------------------------------------
 Ran 1 test in 12.749s
 
 OK
-~~~
+```
 
-+   增加断言，判断是否符合测试要求
+## 2.2 增加断言，判断是否符合测试要求
 
-~~~python
+```python
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -111,11 +115,11 @@ class seleniumTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main(verbosity=2, exit = False)
-~~~
+```
 
-+   执行测试结果
+执行测试结果
 
-~~~shell
+```shell
 test_a_login (__main__.seleniumTest)
 正确的账号密码进行登录 ... ok
 test_b_login (__main__.seleniumTest)
@@ -135,11 +139,11 @@ AssertionError: '账户或密码错误，请重新输入' != '账户或密码错
 Ran 2 tests in 41.063s
 
 FAILED (failures=1)
-~~~
+```
 
-+   增加功能，截取产生有bug的界面
+## 2.3 增加功能，截取产生有bug的界面
 
-~~~python
+```python
 --------------------skip---------------------------------------
         # 判断文案是否错误，并截取用例执行错误时的界面
         errorText = '账户或密码错误，请重新输入！'     
@@ -159,13 +163,12 @@ FAILED (failures=1)
 
 if __name__ == "__main__":
     unittest.main(verbosity=2, exit = False)
-~~~
+```
 
-##### Ⅲ、优化代码结构，产生测试报告
+# 3. 优化代码结构，产生测试报告
 
-+   文件1，储存配置以及通用方法
-
-~~~python
+1, 文件1，储存配置以及通用方法
+```python
 # seleniumconfig.py
 import unittest
 from selenium import webdriver
@@ -198,11 +201,11 @@ class seleniumConfig(unittest.TestCase):
                 (EC.visibility_of_element_located((type_element,element)))
         except:
             self.fail("{}查找失败，请检查元素是否正确或产品出现缺陷".format(element))
-~~~
+```
 
-+   设计测试流程、设计测试用例
+2, 设计测试流程、设计测试用例
 
-~~~python
+```python
 # seleniumtest.py
 from seleniumconfig import seleniumConfig
 from selenium.webdriver.common.by import By
@@ -223,11 +226,11 @@ class seleniumTest(seleniumConfig):
         explana = '登录失败时，提示文案错误'      
        # 判断错误提示文案和需求是否一致
         self.find_element_try(errorMsg, errorText, explana)
-~~~
+```
 
-+   生成测试报告
+# 4. 生成测试报告
 
-~~~python
+```python
 # seleniumrun.py
 import unittest
 import HTMLTestRunner
@@ -263,9 +266,9 @@ runner = HTMLTestRunner.HTMLTestRunner(
 runner.run(kts_login)
 # 不生成测试报告
 # unittest.TextTestRunner(verbosity=2).run(kts_login)
-~~~
+```
 
-+   执行测试用例，获取测试报告
+执行测试用例，获取测试报告
 
 ~~~shell
 py seleniumrun.py

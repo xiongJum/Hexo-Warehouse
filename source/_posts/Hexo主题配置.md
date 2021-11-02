@@ -1,12 +1,13 @@
 ---
-title : Ocean 配置
+title : Ocean 主題配置
 date: 2021-10-30
-updated : 2021-10-31
+updated : 2021-11-02
+
 categories: 博客
 tags:
     - Hexo
     - Ocean
-    - 主题
+    - Hexo 主题
 ---
 
 Ocean 是基于 Hexo 默认主题 landscape 的功能，设计的一款支持移动设备的主题，并且集成了 Gitalk 与 Valine 评论功能。

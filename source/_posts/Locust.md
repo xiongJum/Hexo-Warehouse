@@ -1,23 +1,47 @@
 ---
-title: 性能测试之Locust
+title: Locust
 date: 2020-05-28 09:00:00
-# 
-## cover: https://cdn.jsdelivr.net/gh/xiongJum/Picture/img/78405585_p0.png
+updated: 2021-11-02
 photos : [https://cdn.jsdelivr.net/gh/xiongJum/Picture/img/78405585_p0.png]
-tag: 
-- python
-- http
-- 接口性能测试
+tags: 
+  - 并發
+  - 性能測試
+  - Http
+categories: 
+  - 測試
+  - 性能測試
 ---
 
+locast 是一種易於使用、可編寫脚本且可擴展的性能測試工具。
 
-# Locust性能测试
+在常規 Python 代碼中定義用戶的行爲。
 
-### 1.locust快速入门
+開始使用 [Local](https://docs.locust.io/en/stable/installation.html#installation)
 
-#### （1）简单的locust的执行文件.myLocut.py
+
+<!--more-->
+# 1. 安裝
+
+1, 安裝Locast
+```
+pip3 install locast
+```
+2, 驗證安裝是否成功, 若安裝失敗，請查看[Wiki](https://github.com/locustio/locust/wiki/Installation)
+
+```
+locust -V
+```
+
+
+# 2. locust快速入门
+
+## 2.1 简单的locust的执行文件
+
+1, 編寫簡單的執行文檔
 
 ```python
+# mylocast.py
+
 from locust import HttpUser, task, between
 
 class updateVesion(Httpset):
@@ -31,18 +55,19 @@ class updateVesion(Httpset):
         self.client.port(url,data)
         self.client.get(url)
 ```
+2, 在命令行执行locust文件
 
-+   在命令行执行locust文件
-
-<!-- more -->
-
-```shell
+```
 locust -f mylocut.py
-# 若执行文件没有申明host或想覆盖执行文件中的host
+```
+
+ps: 若执行文件没有申明host或想覆盖执行文件中的host
+
+```
 locust -f mylocut.py --host=http://118.190.124.69:7080
 ```
 
-#### （3）locust执行文件进阶，设置执行效率
+## 2.2 设置执行效率
 
 ```python
 from locust import HttpUser, task, between, constant
@@ -86,9 +111,9 @@ class loginTest(HttpUser):
      	self.client.post(url=logout_url, json=logout_data, headers=headers)
 ```
 
-#### （4）代码优化(嵌套)
+## 2.3 代码优化(嵌套)
 
-+   一般浏览网页时会一级级的向下点击，为模拟用户的真实操作，可以使用TaskSet进行嵌套处理
+1, 一般浏览网页时会一级级的向下点击，为模拟用户的真实操作，可以使用TaskSet进行嵌套处理
 
 ```python
 from locust import HttpUser, task, between, TaskSet
@@ -125,7 +150,7 @@ class runLog(HttpUser):
     wait_time = between(1,2)
 ```
 
-+   两个Locust类并行，并设置测试比例
+## 2.4 两个Locust类并行，并设置测试比例
 
 ```python
 from locust import HttpUser, task, between, TaskSet
@@ -161,9 +186,9 @@ class runLog(HttpUser):
     wait_time = between(1,2)
 ```
 
-### 2.命令行运行测试，以及命令行参数
+# 3. 命令行
 
-#### （1）无web_UI 运行Locust
+## 3.1 无web_UI 运行Locust
 
 ```shell
 locust -f [文件名] --host[网址] --headless [无Web_UI] -u [模拟用户数] -r [用户孵化数] -t [运行时间]
@@ -179,7 +204,7 @@ locust -f [文件名] --host[网址] --headless [无Web_UI] -u [模拟用户数]
 
 ```
 
-#### （2）自定义csv的写入速度
+## 3.2 自定义csv的写入速度
 
 ```python
 import locust.stats
@@ -188,12 +213,11 @@ locust.stats.CSV_STATS_INTERVAL_SEC = 5 # 默认为2s
 
 
 
-#### （2）多机器分布测试
+## 多机器分布测试
 
-+   主机和分机需要在同一个局域网下，或者设置的ip为外网
-+   主机只显示测试数据，不执行性能测试，且主机和分机的执行文件需要一致
-
-+   主机的执行的命令行
+1, 主机和分机需要在同一个局域网下，或者设置的ip为外网
+2, 主机只显示测试数据，不执行性能测试，且主机和分机的执行文件需要一致
+3, 主机的执行的命令行
 
 ```shell
 Locust -f [文件名] --master
@@ -203,7 +227,7 @@ Locust -f [文件名] --master
 # --expect-workers = [数量] 等待X个分机连接后，进行测试（命令行模式下使用）
 ```
 
-+   分机执行的命令行
+4, 分机执行的命令行
 
 ```shell
 locust -f [文件名] --worker
@@ -211,21 +235,23 @@ locust -f [文件名] --worker
 # --master-port = [port] 值和主机设置的值一致；若主机没有特殊指定，则分机不需要特殊设置
 ```
 
-### 3. 提高Http请求性能
+# 4. 提高Http请求性能
 
-#### （1）通过FastHttpLocust提高Locust的Http请求性能
+## 4.1 通过FastHttpLocust提高Locust的Http请求性能
 
-+   通常情况下我们只需要使用requests来实现HTTP请求，若执行脚本时花费了大量的CPU时间，可以切换到FastHttpLocust
+1, 通常情况下我们只需要使用requests来实现HTTP请求，若执行脚本时花费了大量的CPU时间，可以切换到FastHttpLocust
 
-+   安装 geventhttplocust 的python包
-
-```shell
+2, 安装 geventhttplocust 的python包
+```
 pip3 install geventhttpclient
-# 或 使用清华源 加快下载速度
+```
+
+3, 或 使用清华源 加快下载速度
+```
 pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple geventhttpclient
 ```
 
-+   示例代码
+## 示例代码
 
 ```python
 from locust import TaskSet, task, between
@@ -243,8 +269,9 @@ class MyLocust(FastHttpLocust):
 
 +   注意：FastHttpLocust可能无法完全替代HttpLocust。
 
-### 4，参考文件
+---
+# 5，参考文件
 
-+   [阿西河博客](https://www.axihe.com/tools/locust/home.html)
-+   [Locust IO文档](https://docs.locust.io/)
+1, [阿西河博客](https://www.axihe.com/tools/locust/home.html)
+2, [Locust IO文档](https://docs.locust.io/)
 
