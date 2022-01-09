@@ -4,7 +4,7 @@
 
 # Site
 title: Jum`Xiong
-subtitle: '好奇|记录|进步'
+subtitle: '好奇 记录 进步'
 description: '围城'
 keywords: 编程
 author: 熊小酒
@@ -14,7 +14,7 @@ timezone: 'Asia/Shanghai'
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://example.com
-permalink: :year/:month/:day/:title/
+permalink: :year/:month/:day/:name/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks

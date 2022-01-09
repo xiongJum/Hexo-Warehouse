@@ -2,11 +2,13 @@
 title: PlantUML
 date: 2020-06-30 09:00:00
 # photos: https://cdn.jsdelivr.net/gh/xiongJum/Picture/img/78101956_p0.jpg
+categories: 
+    - [奇技淫巧]
 tags: 
-- vscode
 - 工具
 - 流程图
-- 沒用的知識
+- PlantUML
+- vscode
 ---
 
 --基于vscIDE编辑器的PLantUML模块。

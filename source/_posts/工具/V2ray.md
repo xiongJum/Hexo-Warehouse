@@ -1,14 +1,15 @@
 ---
+id: 6
 title: V2ray搭建教程
 date: 2020-07-05 09:00:00
 # photos: https://cdn.jsdelivr.net/gh/xiongJum/Picture//img/82601928_p0.jpg
 tag: 
-- vpn
+- 代理
 - V2ray
 - 梯子
 ---
 
-V2Ray 是一个与 Shadowsocks 类似的代理软件，可以用来科学上网（翻墙）学习国外先进科学技术。
+V2Ray 是一个与 Shadowsocks 类似的代理软件，可以用来科学上网等。
 
 <!--more-->
 
