@@ -1,7 +1,7 @@
 ---
 title : jupyterlab
 date: 2022-01-19
-updated : 2021-01-19
+updated : 2022-01-19
 categories: 
 - [文本编辑器]
 tags:
