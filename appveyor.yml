@@ -13,6 +13,7 @@ install:
 
 build_script:
   - hexo g
+  - hexo --config _config.maple.yml g
 
 artifacts:
   - path: public
