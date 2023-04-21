@@ -12,9 +12,8 @@ install:
   - git submodule update --init --recursive
 
 build_script:
-  - hexo clean
-  - hexo g
   - hexo --config config_webstack.yml g
+  - hexo g
 
 artifacts:
   - path: public
