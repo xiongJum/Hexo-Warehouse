@@ -47,7 +47,13 @@ menu:
 
   - name: 实用工具
     icon: fa fa-wrench
-    config: tools
+    submenu:
+      - name: 工具
+        icon: fa fa-wrench
+        config: tools
+      - name: 网盘
+        icon: fa fa-save
+        config: disk
 
   - name: 系统
     icon: fa fa-home
@@ -182,7 +188,24 @@ tools:
     url: http://bzdt.ch.mnr.gov.cn/index.html
     img: /images/logos/sbsm.ico
     description: 标准地图依据中国和世界各国国界线画法标准编制而成，可用于新闻宣传用图、书刊报纸插图、广告展示背景图、工艺品设计底图等，也可作为编制公开版地图的参考底图。
-    
+disk:
+  - name: 网盘
+    url: https://share.lain.buzz
+    img: /images/logos/onedrive.png
+    description: 自己的网盘,应该什么都有
+  - name: galgame资源发布站 - 幽隐恋梦
+    url: https://ercygame.com/
+    img: /images/logos/ercygame.jpg
+    description: galgame资源发布站
+  - name: 辰残的网盘
+    url: https://p.chencan.ren/ali/
+    img: /images/logos/network-drive.png
+    description: 游戏,电影,等一系列的网盘
+  - name: 量子ACG
+    url: https://odb.lzacg.one/
+    img: /images/logos/network-drive.png
+    description: galgame 网盘
+
 system:
   - name: ArchWiki
     url: https://wiki.archlinux.org/
