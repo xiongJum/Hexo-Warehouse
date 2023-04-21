@@ -7,13 +7,13 @@ environment:
 install:
   - node --version
   - npm --version
-  - npm install hexo-cli -g
   - npm install
+  - npm install hexo-cli -g
   - git submodule update --init --recursive
 
 build_script:
-  - hexo --config config_webstack.yml g
   - hexo g
+  - hexo --config config_webstack.yml g
 
 artifacts:
   - path: public
