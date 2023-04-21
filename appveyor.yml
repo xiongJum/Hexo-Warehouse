@@ -29,6 +29,6 @@ on_success:
   - SETLOCAL EnableDelayedExpansion & robocopy "%APPVEYOR_BUILD_FOLDER%\public" "%TEMP%\static-site" /e & IF !ERRORLEVEL! EQU 1 (exit 0) ELSE (IF !ERRORLEVEL! EQU 3 (exit 0) ELSE (exit 1))
   - echo web.lain.buzz > CNAME
   - git add -A
-  - if "%APPVEYOR_REPO_BRANCH%"=="master" (echo 'true')
+  - if "%APPVEYOR_REPO_BRANCH%"=="webstack" (echo 'true')
   - if not defined APPVEYOR_PULL_REQUEST_NUMBER (echo 'true')
   - if "%APPVEYOR_REPO_BRANCH%"=="master" if not defined APPVEYOR_PULL_REQUEST_NUMBER (git diff --quiet --exit-code --cached || git commit -m "Update Static Site" && git push origin %TARGET_BRANCH% && appveyor AddMessage "Static Site Updated")
