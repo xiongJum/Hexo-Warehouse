@@ -2,7 +2,7 @@ clone_depth: 5
 
 environment:
   access_token:
-    secure: +lDWdHluEifrvj4nnXe+nYTEIcO5mmU/ln6QY4CGq/xbsdO++toCT5ugQQJI0cYH
+    secure: EBHzhnK/fJGISFfeoA9E2LmaCSZZSfTf5rrvdMM4zCIbBlnvzTqAKgwUjJh0fY4BZu20V5FDHSpS+wMxMsIMmJnK76gIsmPPG4imz+IGlfhlR8FTTPs06e+x3cWvdIkV
 
 install:
   - node --version
@@ -19,7 +19,7 @@ artifacts:
 
 on_success:
   - git config --global credential.helper store
-  - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
+  - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://oauth2:$($env:access_token)@github.com`n"
   - git config --global user.email "%GIT_USER_EMAIL%"
   - git config --global user.name "%GIT_USER_NAME%"
   - git clone --depth 5 -q --branch=%TARGET_BRANCH% %STATIC_SITE_REPO% %TEMP%\static-site
@@ -27,7 +27,6 @@ on_success:
   - del * /f /q
   - for /d %%p IN (*) do rmdir "%%p" /s /q
   - SETLOCAL EnableDelayedExpansion & robocopy "%APPVEYOR_BUILD_FOLDER%\public" "%TEMP%\static-site" /e & IF !ERRORLEVEL! EQU 1 (exit 0) ELSE (IF !ERRORLEVEL! EQU 3 (exit 0) ELSE (exit 1))
-  - echo blog.xcumin.top > CNAME
+  - echo blog.lain.buzz > CNAME
   - git add -A
   - if "%APPVEYOR_REPO_BRANCH%"=="master" if not defined APPVEYOR_PULL_REQUEST_NUMBER (git diff --quiet --exit-code --cached || git commit -m "Update Static Site" && git push origin %TARGET_BRANCH% && appveyor AddMessage "Static Site Updated")
-  - echo blog.xcumin.top > CNAME

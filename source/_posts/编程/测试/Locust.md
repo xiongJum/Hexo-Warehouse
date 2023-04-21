@@ -1,8 +1,8 @@
 ---
 title: 性能测试 for Locust
 date: 2020-05-28
-updated: 2022-01-09
-photos : [https://cdn.jsdelivr.net/gh/xiongJum/Picture/img/78405585_p0.png]
+updated: 2023-04-21 11:56:22
+photos : https://share.lain.buzz/api/name/Locust.jpeg?path=/🖼%20Picture/图床/博客/Locust.jpeg
 tags: 
   - 性能测试
   - Python
@@ -15,14 +15,13 @@ locast 是一種易於使用、可編寫脚本且可擴展的性能測試工具�
 
 在常規 Python 代碼中定義用戶的行爲。
 
-開始使用 [Local](https://docs.locust.io/en/stable/installation.html#installation)
+開始使用 [Local](https://locust.io/)
 <!--more-->
 
 
 #### 安装 Locust
 
-安装 locast 和 geventhttpclient。可以 {% post_link PyPi 更换pip源 %} 加快使用下载速度
-
+安装 locast 和 geventhttpclient。
 ```
 pip3 install locast, geventhttpclient
 

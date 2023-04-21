@@ -2,6 +2,7 @@
 title : jupyterlab
 date: 2022-01-19
 updated : 2022-01-19
+photos: https://share.lain.buzz/api/name/jupyter-logo.svg?path=/🖼%20Picture/图床/博客/jupyter-logo.svg
 categories: 
 - [文本编辑器]
 tags:

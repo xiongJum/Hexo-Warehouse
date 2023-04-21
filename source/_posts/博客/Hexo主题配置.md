@@ -2,6 +2,7 @@
 title : Ocean 主題配置
 date: 2021-10-30
 updated : 2021-11-02
+photos: https://raw.githubusercontent.com/zhwangart/hexo-theme-ocean/develop/screenshots/hexo-theme-ocean.jpg
 categories: 
 - [博客]
 tags:
