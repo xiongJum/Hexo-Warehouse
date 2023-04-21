@@ -1,11 +1,11 @@
 # Menu
 menu:
-  首頁: /
-  分類: /categories
+  首页: /
+  分类: /categories
   收藏: /favorites
-  關於: /about
-  時間綫: /archives
-  书签: /webstack
+  时间线: /archives
+  书签: https://web.lain.buzz
+  关于: /about
 
 # 设置rss 当前暂未安装
 ##  rss: /atom.xml
