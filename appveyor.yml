@@ -13,6 +13,7 @@ install:
 
 build_script:
   - hexo g
+  - hexo --config config_webstack.yml g
 
 artifacts:
   - path: public

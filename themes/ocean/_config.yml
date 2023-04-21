@@ -5,6 +5,7 @@ menu:
   收藏: /favorites
   關於: /about
   時間綫: /archives
+  书签: /webstack
 
 # 设置rss 当前暂未安装
 ##  rss: /atom.xml
