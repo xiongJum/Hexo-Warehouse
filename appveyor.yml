@@ -12,7 +12,9 @@ install:
   - git submodule update --init --recursive
 
 build_script:
+  - hexo clean
   - hexo g
+  - hexo --config _config.maple.yml clean
   - hexo --config _config.maple.yml g
 
 artifacts:
