@@ -13,8 +13,8 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://blog.lain.buzz/diary/
-root: /diary/
+url: https://blog.lain.buzz/categories/diary/
+root: /categories/diary/
 permalink: :year/:month/:day/:name/
 permalink_defaults:
 pretty_urls:
@@ -22,15 +22,14 @@ pretty_urls:
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
-source_dir: source_maple
-public_dir: public/diary
+source_dir: source
+public_dir: public/categories/diary
 tag_dir: tags
-archive_dir: archives
-category_dir: categories
+# archive_dir: archives
+category_dir: categorys
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
-
+skip_render: "_posts/ocean/*"
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: diary
