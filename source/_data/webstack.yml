@@ -56,7 +56,7 @@ menu:
         config: disk
 
   - name: 系统
-    icon: fa fa-home
+    icon: fa fa-terminal
     config: system
 
   - name: 编程
@@ -72,6 +72,9 @@ menu:
       - name: 域名
         icon: fa fa-server
         config: domainName
+      - name: 博客
+        icon: fa fa-blog
+        config: blog
 
   - name: 生活服务
     icon: fa fa-heartbeat
@@ -88,10 +91,6 @@ menu:
         config: porn
 
 commonly:
-  - name: 个人博客
-    url: http://blog.lain.buzz/
-    img: /images/logos/blog.png
-    description: 懒人博客,什么都有
   - name: 网盘
     url: https://share.lain.buzz
     img: /images/logos/onedrive.png
@@ -255,6 +254,15 @@ domainName:
     url: https://dash.cloudflare.com/
     img: /images/logos/cloudflare.png
     description: CDN 服务, 提供域名等一些网站服务
+blog:
+  - name: hexo
+    url: https://hexo.io/zh-cn/
+    img: /images/logos/hexo.png
+    description: 前端静态博客框架
+  - name: hugo
+    url: https://gohugo.io/
+    img: /images/logos/hugo.png
+    description: go 语言编写, 响应和编译速度高于hexo
 
 life:
   - name: 浙江政务服务网
