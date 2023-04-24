@@ -14,7 +14,7 @@ timezone: 'Asia/Shanghai'
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://blog.lain.buzz/diary/
-root: /categories/diary
+root: /tags/diary
 permalink: :year/:month/:day/:name/
 permalink_defaults:
 pretty_urls:
@@ -23,13 +23,23 @@ pretty_urls:
 
 # Directory
 source_dir: source
-public_dir: public/categories/diary
+public_dir: public/tags/diary
 tag_dir: tags
 # archive_dir: archives
 category_dir: categorys
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render: "_posts/ocean/*"
+# 跳过 dairy_ 开头的文章渲染
+skip_render: 
+  - "_posts/code_*"
+  - "_posts/tools_*"
+  - "_posts/blog_*"
+  - "_posts/system_*"
+  - "_tags"
+  - "favorites"
+  - "about"
+  - "gallery"
+  - "link"
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: diary

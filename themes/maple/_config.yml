@@ -1,8 +1,8 @@
 # Header
 nav:
-  Home: ../../
-  Categories: /category
-  Tags: /tag
+  首页: ../../
+# Categories: /category
+  标签: /tag
 
 # favicon
 favicon: /favicon.png

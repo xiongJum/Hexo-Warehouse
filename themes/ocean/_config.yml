@@ -1,7 +1,8 @@
 # Menu
 menu:
   首页: /
-  分类: /categories
+#  分类: /categories
+  标签: /tags
   收藏: /favorites
   时间线: /archives
   书签: https://web.lain.buzz
