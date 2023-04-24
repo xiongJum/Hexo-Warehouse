@@ -33,7 +33,7 @@ beian:
 
 
 # Tags
-show_count: false
+show_count: true
 
 # Toc
 toc: true
