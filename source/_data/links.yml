@@ -1,0 +1,22 @@
+# 参考 https://hexo.io/zh-cn/docs/data-files.html
+
+數學家:
+  url: https://zhwangart.com/
+  img: /img/logos/shark.svg
+  text: 數學家博客, 选择过的Hexo主题之一
+
+Emil\`s Blog:
+  url: https://blog.hvnobug.com/
+  img: /img/logos/safari-pinned-tab.svg
+  text: 以前搭建博客时作为参考
+
+宅談:
+  url: https://otakism.com/
+  img: /img/logos/zhaitan.png
+  text: 图片博客, 计划以后增加此页面
+
+蟬時雨:
+  url: https://chanshiyu.com
+  img: /img/logos/chanshiyu.ico
+  text: 以前搭建博客时作为参考
+

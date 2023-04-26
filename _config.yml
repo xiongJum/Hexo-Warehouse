@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Jum`Xiong
+title: Lain
 subtitle: '好奇 记录 进步'
 description: '围城'
 keywords: 编程
-author: 熊小酒
+author:
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
@@ -46,13 +46,14 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
+# 使用 ringo 主题时需要关闭代码高亮
 highlight:
-  enable: true
-  line_number: true
-  auto_detect: false
+  enable: false
+  line_number: false
+    #auto_detect: false
   tab_replace: ''
   wrap: true
-  hljs: false
+  hljs: true
 prismjs:
   enable: false
   preprocess: true
@@ -100,7 +101,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: ocean
+theme: ringo
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

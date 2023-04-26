@@ -1,0 +1,17 @@
+<%- css("https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/styles/" + theme.highlight.theme + ".min.css") %>
+<%- js("https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/highlight.min.js") %> 
+
+<script>
+// 解决使用 highlightjs 导致代码块不换行的问题 https://highlightjs.org/usage/
+  const brPlugin = {
+    "before:highlightBlock": ({ block }) => {
+      block.innerHTML = block.innerHTML.replace(/\n/g, '').replace(/<br[ /]*>/g, '\n');
+    },
+    "after:highlightBlock": ({ result }) => {
+      result.value = result.value.replace(/\n/g, "<br>");
+    }
+  };
+        hljs.addPlugin(brPlugin);
+// 截止到这
+        hljs.highlightAll();
+</script>
