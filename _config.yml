@@ -26,7 +26,7 @@ source_dir: source
 public_dir: public
 tag_dir: tags
 archive_dir: archives
-category_dir: categories
+  #category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
@@ -116,8 +116,8 @@ tag_cloud:
     textColor: '#333'
     textHeight: 25
     outlineColor: '#E2E1D1'
-    maxSpeed: 0.5
-    pauseOnSelected: false # true 意味着当选中对应 tag 时,停止转动
+    maxSpeed: 0.1
+    pauseOnSelected: true # true 意味着当选中对应 tag 时,停止转动
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

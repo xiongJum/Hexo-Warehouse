@@ -1,13 +1,15 @@
 menu:
-    Blog: /
+    # Blog: /
     Archive: /archives
       #iGitHub: /
       #Stackoverflow: /
     About: /about
+    Link: /favorites
     Rss: /atom.xml
+    Favorites: https://web.lain.buzz
 
-favicon: /favicon.ico
-logo: https://avatars1.githubusercontent.com/u/3142935?v=3&s=466 or file
+favicon: /favicon.png
+logo: /logo.png
 
 # Comment
 # e.g disqus: helloworld

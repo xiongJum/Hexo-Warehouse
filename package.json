@@ -30,6 +30,6 @@
     "hexo-renderer-sass-next": "^0.1.3",
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^1.0.0",
-    "hexo-tag-cloud": "^1.0.9"
+    "hexo-tag-cloud": "^2.1.*"
   }
 }
