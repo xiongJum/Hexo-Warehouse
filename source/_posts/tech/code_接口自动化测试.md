@@ -7,14 +7,7 @@ tags:
 - 接口自动化测试
 - 自动化测试
 - Python
-- requests
-- unittest
 ---
-
-基于 requests 库 和 unittest 库，编写的脚本 demo，还存在不成熟的地方。
-
-<!--more-->
-
 
 # 准备
 
