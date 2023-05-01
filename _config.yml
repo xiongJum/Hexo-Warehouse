@@ -119,6 +119,10 @@ tag_cloud:
     maxSpeed: 0.1
     pauseOnSelected: true # true 意味着当选中对应 tag 时,停止转动
 
+# hexo-tag-aplayer
+#aplayer:
+#  meting: true
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
