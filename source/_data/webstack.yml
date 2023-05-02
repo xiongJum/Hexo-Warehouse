@@ -89,6 +89,10 @@ menu:
       - name: Porn
         icon: fa fa-female
         config: porn
+  
+  - name: 友情链接
+    icon: fa fa-crown
+    config: favorites
 
 commonly:
   - name: 网盘
@@ -169,6 +173,10 @@ image:
     url: https://icons8.com/
     img: /images/logos/icons8.png
     description: icon 设计平台,提供部分内容的免费下载
+  - name: Fontawesome
+    url: https://fontawesome.com.cn/v5
+    img: /images/logos/comm.png
+    description: 图标| Fontawesome中文网
 
 tools:
   - name: Deepl翻译
@@ -187,6 +195,10 @@ tools:
     url: http://bzdt.ch.mnr.gov.cn/index.html
     img: /images/logos/sbsm.ico
     description: 标准地图依据中国和世界各国国界线画法标准编制而成，可用于新闻宣传用图、书刊报纸插图、广告展示背景图、工艺品设计底图等，也可作为编制公开版地图的参考底图。
+  - name: TypingClub
+    url: https://www.typingclub.com/da-zi
+    img: /images/logos/typingclub.png
+    description: 打字练习
 disk:
   - name: 网盘
     url: https://share.lain.buzz
@@ -304,6 +316,16 @@ lifan:
     url: https://blog.reimu.net/
     img: /images/logos/reimu.png
     description: 里届acg社区,提供动画,游戏等内容的下载(上上下下左右左右)
+
+favorites:
+  - name: WebStackPage
+    url: https://github.com/WebStackPage/WebStackPage.github.io/
+    img: /images/logos/github.png
+    description: Webstack网址导航
+  - name: hexo-theme-webstack
+    url: https://github.com/HCLonely/hexo-theme-webstack
+    img: /images/logos/github.png
+    description: 本站基于此框架
 
 # about:
 #   url: /about/
