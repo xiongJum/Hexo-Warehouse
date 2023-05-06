@@ -141,6 +141,10 @@ audio:
     url: https://bangumi.tv/
     img: /images/logos/bangumi.png
     description: ACGN 讨论社区
+  - name: VCB-Studio
+    url: https://vcb-s.com
+    img: /images/logos/vcb.png
+    description: 动画压制组
 
 games:
   - name: Nintendo
