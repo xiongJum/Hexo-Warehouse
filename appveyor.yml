@@ -1,8 +1,8 @@
 clone_depth: 5
 
 environment:
-  access_token:
-    secure: EBHzhnK/fJGISFfeoA9E2LmaCSZZSfTf5rrvdMM4zCIbBlnvzTqAKgwUjJh0fY4BZu20V5FDHSpS+wMxMsIMmJnK76gIsmPPG4imz+IGlfhlR8FTTPs06e+x3cWvdIkV
+  my_variable:
+    secure: EBHzhnK/fJGISFfeoA9E2KNGuaaehZX0ZTlIoptK3ztlBdAqa8waXefa9COiUVgXlVG0uKxopIk6c6pAtgByYMnxPo3ANdQHxfRzSPg8eQGXDcZp1dl7OJHk7w4uh2Hu
 
 install:
 
