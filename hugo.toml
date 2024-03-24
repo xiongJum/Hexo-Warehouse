@@ -1,0 +1,52 @@
+baseURL = 'https://example.org/'
+languageCode = 'zh-CN'
+title = 'LongLit'
+theme = "archie"
+copyright = "© LongLit"
+# Code Highlight
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+
+
+paginate=5 # articles per page
+
+[params]
+	mode="light" # color-mode → light,dark,toggle or auto
+	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
+	subtitle = "现在就行动"
+	mathjax = false # enable MathJax support
+	katex = false # enable KaTeX support
+
+# Social Tags
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/athul/archie"
+
+# Main menu Items
+
+
+[[menu.main]]
+name = "文章"
+url = "/post"
+weight = 1
+
+[[menu.main]]
+name = "标签"
+url = "/tags"
+weight = 2
+
+[[menu.main]]
+name = "书签"
+url = "/mark"
+weight = 3
+
+[[menu.main]]
+name = "关于"
+url = "/about"
+weight = 4
+
+

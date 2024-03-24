@@ -5,17 +5,12 @@ environment:
     secure: EBHzhnK/fJGISFfeoA9E2LmaCSZZSfTf5rrvdMM4zCIbBlnvzTqAKgwUjJh0fY4BZu20V5FDHSpS+wMxMsIMmJnK76gIsmPPG4imz+IGlfhlR8FTTPs06e+x3cWvdIkV
 
 install:
-  - node --version
-  - npm --version
-  - npm install
-  - npm install hexo-cli -g
-  - git submodule update --init --recursive
+
+  - winget install Hugo.Hugo.Extended
+  - hugo version
 
 build_script:
-  - hexo clean
-  - hexo g
-  - hexo --config _config.maple.yml clean
-  - hexo --config _config.maple.yml g
+  - hugo
 
 artifacts:
   - path: public
