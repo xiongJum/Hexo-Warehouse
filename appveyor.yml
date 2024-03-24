@@ -1,7 +1,7 @@
 clone_depth: 5
 
 environment:
-  my_variable:
+  access_token:
     secure: EBHzhnK/fJGISFfeoA9E2KNGuaaehZX0ZTlIoptK3ztlBdAqa8waXefa9COiUVgXlVG0uKxopIk6c6pAtgByYMnxPo3ANdQHxfRzSPg8eQGXDcZp1dl7OJHk7w4uh2Hu
 
 install:
@@ -25,6 +25,5 @@ on_success:
   - del * /f /q
   - for /d %%p IN (*) do rmdir "%%p" /s /q
   - SETLOCAL EnableDelayedExpansion & robocopy "%APPVEYOR_BUILD_FOLDER%\public" "%TEMP%\static-site" /e & IF !ERRORLEVEL! EQU 1 (exit 0) ELSE (IF !ERRORLEVEL! EQU 3 (exit 0) ELSE (exit 1))
-  - echo blog.lain.buzz > CNAME
   - git add -A
   - if "%APPVEYOR_REPO_BRANCH%"=="master" if not defined APPVEYOR_PULL_REQUEST_NUMBER (git diff --quiet --exit-code --cached || git commit -m "Update Static Site" && git push origin %TARGET_BRANCH% && appveyor AddMessage "Static Site Updated")
