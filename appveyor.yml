@@ -6,11 +6,11 @@ environment:
 
 install:
 
-  - winget install Hugo.Hugo.Extended
-  - hugo version
+  - ps: winget install Hugo.Hugo.Extended
+  - ps: hugo version
 
 build_script:
-  - hugo
+  - ps: hugo
 
 artifacts:
   - path: public
