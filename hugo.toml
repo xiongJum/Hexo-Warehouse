@@ -13,7 +13,7 @@ pygmentscodefencesguesssyntax = true
 paginate=5 # articles per page
 
 [params]
-	mode="light" # color-mode → light,dark,toggle or auto
+	mode="auto" # color-mode → light,dark,toggle or auto
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
 	subtitle = "现在就行动"
 	mathjax = false # enable MathJax support
@@ -25,6 +25,24 @@ paginate=5 # articles per page
 name = "GitHub"
 icon = "github"
 url = "https://github.com/athul/archie"
+
+
+
+[markup]
+  [markup.asciidocExt]
+    backend = 'html5'
+    extensions = []
+    failureLevel = 'fatal'
+    noHeaderOrFooter = true
+    preserveTOC = true
+    safeMode = 'unsafe'
+    sectionNumbers = false
+    trace = false
+    verbose = false
+    workingFolderCurrent = false
+    [markup.asciidocExt.attributes]
+
+
 
 # Main menu Items
 

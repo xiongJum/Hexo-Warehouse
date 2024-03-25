@@ -3,6 +3,7 @@ title: 安装 Node.js
 date: 2023-04-26 21:16:04
 categories: ["玩机"]
 tags: ["node", "npm", "安装"]
+toc: false
 ---
 
 # 安装
