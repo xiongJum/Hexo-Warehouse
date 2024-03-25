@@ -8,7 +8,7 @@ draft = false
 
 [主页 | Microsoft 365](https://www.office.com/?auth=2)
 
-[XiongJum - 我的个人书签](https://xiongjum.github.io/bookmark/)
+[书签](https://xiongjum.github.io/mark/)
 
 ### 影视资源
 
@@ -18,11 +18,16 @@ draft = false
 
 [漫猫动漫BT下载](https://www.comicat.org/)
 
+[nyaa](https://nyaa.si/)
+
+
 ### 流媒体
 
 [哔哩哔哩 (゜-゜)つロ 干杯~-bilibili](https://www.bilibili.com/)
 
 ### 账户
+
+[Gravatar - 全球公认的头像](https://cn.gravatar.com/emails/)
 
 [微软账户](https://account.microsoft.com/)
 
@@ -30,17 +35,19 @@ draft = false
 
 [Nintendo 账户](https://my.nintendo.com/?lang=zh-TW)
 
-### 已删除
+#### 已删除
 
 [登录 • Instagram](https://www.instagram.com/accounts/login/?next=/accounts/remove/request/temporary/)
-
-[Gravatar - 全球公认的头像](https://cn.gravatar.com/emails/)
 
 ### 网盘
 
 [Lain OneDrive](https://onedrive-vercel-index-three-khaki.vercel.app/zh-CN/)
 
 [ShareDrive](https://oneindex-share.vercel.app/zh-CN/)
+
+## 论坛
+
+[Bangumi 番组计划](https://bangumi.tv/)
 
 ## 资源搜索
 
@@ -80,11 +87,28 @@ draft = false
 
 [分享交流下载字幕平台 - SubHD](https://subhd.tv/)
 
+### 游戏
+
+[galgame资源发布站 - 幽隐恋梦](https://ercygame.com/)
+
+### 图片
+
+#### 壁纸
+
+[wallhaven](https://wallhaven.cc/)
+
+[WallHere](https://wallhere.com/)
+
+#### 图片
+
+[pexels](https://www.pexels.com/zh-cn/)
+
+
 * * *
 
-## 书籍
+### 书籍
 
-### 电子书
+#### 电子书
 
 [书伴 – 你的电子书伴侣](https://bookfere.com/)
 
@@ -96,7 +120,7 @@ draft = false
 
 [平凡的邪惡 epub下载,漢娜·鄂蘭,精校版\_iamtxt电子书](https://www.iamtxt.com/book/46918.html)
 
-### 书籍商店
+#### 书籍商店
 
 [图灵社区](https://www.ituring.com.cn/user/owe-book)
 
@@ -144,6 +168,10 @@ draft = false
 
 [Linux 命令搜索引擎](https://wangchujiang.com/linux-command/)
 
+[ArchWiki](https://wiki.archlinux.org/)
+
+[archlinux 简明指南](https://arch.icekylin.online/)
+
 #### 硬件解码
 
 [硬件视频加速 - ArchWiki](https://wiki.archlinux.org/title/Hardware_video_acceleration#Configuring_VA-API)
@@ -170,7 +198,57 @@ draft = false
 
 [考研百科\_解锁考研困惑\_中国研究生招生信息网](https://yz.chsi.com.cn/yzzt/kybk)
 
-## 玩机工具
+## 工具
+
+### 在线工具
+
+#### 常用
+
+[Deepl翻译](https://www.deepl.com/translator#zh/en/%E5%8C%85)
+
+[speedtest](https://www.speedtest.net/)
+
+[标准地图服务](http://bzdt.ch.mnr.gov.cn/index.html)
+
+#### 随机生成颜色
+
+[Create a palette - Coolors](https://coolors.co/edafb8-f7e1d7-dedbd2-b0c4b1-4a5759)
+
+* * *
+
+#### 图片编辑
+
+[Convertio — 文件转换器](https://convertio.co/zh/)
+
+[最佳GIF，GIF编辑器，GIF制作工具-Gifburg](https://gifburg.com/cn/)
+
+[Free Icons, Clipart Illustrations, Photos, and Music](https://icons8.com/)
+
+[iconfont-阿里巴巴矢量图标库](https://www.iconfont.cn/)
+
+[waifu2x](https://waifu2x.udp.jp/index.zh-CN.html)
+
+* * *
+
+#### 虚拟信息
+
+[美国地址生成，美国人虚构信息生成-世界各国虚拟身份信息、地址、信用卡生成](https://www.dizhishengcheng.com/)
+
+[在线大陆身份证号码生成器](http://www.chineseidcard.com/)
+
+#### 浏览器信息
+
+[What's my user agent?](https://whatsmyua.info/)
+
+* * *
+
+#### 打字练习
+
+[指法输入中文打字俱乐部 | TypingClub](https://www.typingclub.com/da-zi)
+
+### Windows
+
+[Win10 隐藏硬盘上面额外的6个文件夹+3D 对象 - 知乎](https://zhuanlan.zhihu.com/p/25942015)
 
 ### 程序
 
@@ -232,8 +310,6 @@ draft = false
 
 [Github+Hexo+Next+Appveyor 建站指南 | Ye's Blog](https://zorroye.github.io/posts/2959710163/)
 
-[Gravatar](https://wordpress.com/log-in/link/zh-cn?client_id=1854&redirect_to=https%3A%2F%2Fpublic-api.wordpress.com%2Foauth2%2Fauthorize%3Fclient_id%3D1854%26response_type%3Dcode%26blog_id%3D0%26state%3D84d27eaa23e0b6b9828be40e410dc734ddcfcbe8ae4ac0c0e1dbaf9472af85e0%26redirect_uri%3Dhttps%253A%252F%252Fgravatar.com%252Fconnect%252F%253Fredirect_to%253D%25252Fprofile%25252Favatars%25252F%2526action%253Drequest_access_token%26from-calypso%3D1)
-
 [Login - AppVeyor](https://ci.appveyor.com/login)
 
 ## 魔法上网
@@ -250,49 +326,15 @@ draft = false
 
 [v2fly/geoip: GeoIP for V2Ray. Generate and release GeoIP files such as geoip.dat and geoip-only-cn-private.dat for V2Ray automatically every Thursday.](https://github.com/v2fly/geoip?tab=readme-ov-file)
 
-## Windows
+## 国家
 
-[Win10 隐藏硬盘上面额外的6个文件夹+3D 对象 - 知乎](https://zhuanlan.zhihu.com/p/25942015)
+[浙江政务服务网](http://www.zjzwfw.gov.cn/zjservice/front/index/page.do?webId=1)
 
-### 在线工具
+[浙江24365大学生就业服务平台](http://www.ejobmart.cn/jyxt-v5/jyweb/webIndex.zf)
 
-### 随机生成颜色
+[公安部互联网交通安全综合服务管理平台](https://gab.122.gov.cn/m/index/)
 
-[Create a palette - Coolors](https://coolors.co/edafb8-f7e1d7-dedbd2-b0c4b1-4a5759)
-
-* * *
-
-### 文件格式
-
-[Convertio — 文件转换器](https://convertio.co/zh/)
-
-### 图片编辑
-
-[最佳GIF，GIF编辑器，GIF制作工具-Gifburg](https://gifburg.com/cn/)
-
-[Free Icons, Clipart Illustrations, Photos, and Music](https://icons8.com/)
-
-[iconfont-阿里巴巴矢量图标库](https://www.iconfont.cn/)
-
-* * *
-
-### 虚拟信息
-
-[美国地址生成，美国人虚构信息生成-世界各国虚拟身份信息、地址、信用卡生成](https://www.dizhishengcheng.com/)
-
-[在线大陆身份证号码生成器](http://www.chineseidcard.com/)
-
-### 浏览器信息
-
-[What's my user agent?](https://whatsmyua.info/)
-
-* * *
-
-### 打字练习
-
-[指法输入中文打字俱乐部 | TypingClub](https://www.typingclub.com/da-zi)
-
-### 临时
+## 临时
 
 [ViciNeko - pixiv](https://www.pixiv.net/users/65353236)
 
@@ -304,9 +346,16 @@ draft = false
 
 ## 学习资料
 
+### 导航
+
+[Porn Dude](https://theporndude.com/zh)
+
 ### 在线网站
 
 [OXXX.CC | vpn](https://www.oxxx.cc/)
+
+[jav-magnet](https://jav-magnet.com)
+
 
 * * *
 
@@ -315,6 +364,8 @@ draft = false
 * * *
 
 [免費A漫 - 禁漫天堂](https://18comic.vip/)
+
+[hanime1](https://hanime1.me/)
 
 ### 资源搜索
 
